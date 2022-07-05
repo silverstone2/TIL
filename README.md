@@ -397,4 +397,30 @@ boolean type 데이터가 들어가는 변수의 이름을 대화식으로 지�
 
 * 나의 변수명으로 여러개의 값을 한번에 관리 가능하면 좋겠다라는 생각이 들음<br>
 특정키값으로 여러값을 한번에 저장하는 type ex) { key:value, key2:value2, ,,,,,,}<br>
-페이지 - 검사 - console에서 확인하는 명령어는 변수명.key ex)mem1.num , mem1.name ,,,
+페이지 - 검사 - console에서 확인하는 명령어는 변수명.key ex)mem1.num , mem1.name ,,,<br>
+
+
+* 하나의 변수명으로 여러개의 값을 한번에 관리 가능하면 좋겠다라는 생각이 들으면 이때는 object type을 사용하면 된다.
+
+![image](https://user-images.githubusercontent.com/107795925/177246482-b61aff50-b939-4076-b6eb-c4d6aeb00e83.png)
+
+![image](https://user-images.githubusercontent.com/107795925/177246514-344b7579-9bdc-4aff-8d6b-a4e9ed5bfd7d.png)
+
+![image](https://user-images.githubusercontent.com/107795925/177246559-2a85db1b-d476-44c0-a8d9-384e1a6ee24f.png)
+
+![image](https://user-images.githubusercontent.com/107795925/177246587-47a2e952-363c-4430-addd-53d187fa1df3.png)
+
+number, string, boolean type이 들어 있는 변수 안에는 실제로 그 값이 들어 있다고 생각해도 무방하다.<br>
+
+object, array, function type은 heap 영역에 만들어진다.(사물함 영역에 만들어진다)<br>
+사물함은 사물함 번호로 관리가 된다. (즉 heap 영역 안에서의 변수들이 할당받는 주소값이 다르다는 뜻으로 해석하면 됨)<br>
+사물함 번호를 프로그래밍적인 관점에서는 "참조값"이라고 부른다.<br>
+"참조값"은 사물함 key라고 상상을 하면 된다. <br>
+
+
+프로그래밍관점에서 봤을 때 사람이 필요한 물건을 주머니에 넣고 바로 꺼내쓰는 것과는 다르게 heap이라는 영역에 함수가 미리 만들어져있고 이를 끌어다 쓴다.<br>
+key 값이 필요함 이것들을 사용하려면!<br>
+
+
+
+
