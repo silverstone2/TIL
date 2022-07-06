@@ -467,4 +467,46 @@ key 값이 필요함 이것들을 사용하려면!<br>
 ![선생님 저장소 사용하는 방법 3번 방법3](https://user-images.githubusercontent.com/107795925/177288942-1f44d8b3-a3c7-4599-a99e-1dc210bedf4d.PNG)
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------
+### 20220706
+
+* alert, confirm, prompt 모두 콘솔창에서 실행이 가능하고 빌트인함수임.
+
+![image](https://user-images.githubusercontent.com/107795925/177463043-ef6255d5-5ea9-44e6-a687-f13c89a6980c.png)
+
+* 각종 type들을 저장하면서 구조가 조금씩 바뀌기도 하고 변수가 어디에 선언이 되었느냐에 따라 호출하거나 참조하는 방법이 달라진다(아래 3개 사진 참고)
+
+![heap과 stack 구조](https://user-images.githubusercontent.com/107795925/177464259-4ff4a434-806d-4543-80a4-726030d7433a.PNG)
+
+![heap과 stack 구조2](https://user-images.githubusercontent.com/107795925/177464263-95e9adff-5084-4cd5-9231-913ad81f2877.PNG)
+
+![전역변수와 지역변수](https://user-images.githubusercontent.com/107795925/177464270-3221a15c-e3d1-4ba0-aa44-aaff2f0e1c78.PNG)
+
+* 구분해놔야할 상황
+object type : 여러 타입의 정보가 서로 섞여잇으면 사용하는 것이 좋음(단 순서가 중요하지 않을 때)<br>
+array type : 하나의 타입으로 구성되어 있지만 여러 개가 나열되었을때 사용하는 것이 좋음(순서가 중욯ㄹ때 주로 사용)<br>
+
+* function type -> 특정 시점에 동작할 기능들을 한곳에 모아놨다가 일괄적으로 실행을 시키는 특징을 가지고 있음.
+- 참조값은 레퍼런스 값이라고 하며 이는 변수가 아닌 다른 곳에 들어 있을 수도 있음<br>
+(ex) 사물함 키가 다른 사물함 안에 있는 경우도 있듯이 참조값도 똑같음.
+
+
+* git 추가사항
+
+보통 commit을 진행할 때는 git commit -m "~~~" 형식으로 작성하지만 git commit 후에 뒤에 아무것도 없이 enter를 누르면<br>
+vi 편집기 화면으로 들어가게 됨.<br>
+vi editor는 두가지 모드가 있음(edit mode / command mode)<br>
+
+이 때 맨 밑에 insert라는 글자가 있으면 편집모드로 전환된 것이고 없다면 command 모드로 진행됨.<br>
+insert는 i를 누르면 나타났다가 사라지며 화면상 '#'으로 시작되있는 것은 모두 주석처리 된 것이다. 명령모드는 esc를 통해 바꿀 수 있고 이후에는 :wq로 저장하고 나가면 된다.
+
+* 문서 객체는 object와 매우 유사하다.
+
+![문서객체](https://user-images.githubusercontent.com/107795925/177464048-3ba9c19a-2c5c-4448-9200-c566c27aa3f3.PNG)
+
+위의 사진에서 보는 12개의 구성요소는 heap에 각각의 문서 object를 생성한다. 만일 개발자가 필요하다가ㅗ 하면 저 문서 object에 접근할 수 있게 허용해준다.<br>
+문서의 참조값을 얻어오는 방법 : 웹페이지 - 검사 - console - document.querySelectorAll(바꿀요소)[몇번째순서].바꿀내용
+
+
+
+
 
