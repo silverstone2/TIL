@@ -489,7 +489,6 @@ array type : 하나의 타입으로 구성되어 있지만 여러 개가 나열�
 - 참조값은 레퍼런스 값이라고 하며 이는 변수가 아닌 다른 곳에 들어 있을 수도 있음<br>
 (ex) 사물함 키가 다른 사물함 안에 있는 경우도 있듯이 참조값도 똑같음.
 
-
 * git 추가사항
 
 보통 commit을 진행할 때는 git commit -m "~~~" 형식으로 작성하지만 git commit 후에 뒤에 아무것도 없이 enter를 누르면<br>
@@ -506,7 +505,13 @@ insert는 i를 누르면 나타났다가 사라지며 화면상 '#'으로 시작
 위의 사진에서 보는 12개의 구성요소는 heap에 각각의 문서 object를 생성한다. 만일 개발자가 필요하다가ㅗ 하면 저 문서 object에 접근할 수 있게 허용해준다.<br>
 문서의 참조값을 얻어오는 방법 : 웹페이지 - 검사 - console - document.querySelectorAll(바꿀요소)[몇번째순서].바꿀내용
 
+-----------------------------------------------------------------------------------------
+0706 오후
 
+![example1](https://user-images.githubusercontent.com/107795925/177512869-434862a7-f608-47a7-92b1-ef73ba9c2b20.PNG)
 
+![example2](https://user-images.githubusercontent.com/107795925/177512875-9f96021f-9e61-42cc-8095-0dc37863256f.PNG)
+
+![example3](https://user-images.githubusercontent.com/107795925/177512889-e6b54732-b70a-4cda-b1e8-8f8a86f06eff.PNG)
 
 
