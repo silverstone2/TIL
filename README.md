@@ -529,11 +529,11 @@ insert는 i를 누르면 나타났다가 사라지며 화면상 '#'으로 시작
 
 ![image](https://user-images.githubusercontent.com/107795925/177687205-7e79ae57-5abf-43a7-8f32-bcb506eb7931.png)
 
-```
+```html
             document.querySelector("#myBtn").addEventListener("click",function(){
                         document.querySelector("#console").innerText = "앗 버튼을 눌렀네요?";
             });
-```html
+```
 
 - addEventListener() 함수는 2개의 값은 전달함. 앞의 값은 string type(이벤트명)을 전달하고<br>
 뒤의 값은 function type(callback function)을 전달 [callback 함수는 나중에 자동으로 호출되는 함수를 의미함.]<br>
