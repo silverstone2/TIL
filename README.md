@@ -551,3 +551,30 @@ javascript는 함수를 호출하면서 함수 자체를 전달하는 기능이 
 
 ![image](https://user-images.githubusercontent.com/107795925/177687435-4aea7eee-c46b-4196-8b50-53375191c654.png)
 
+
+--------------------------------------------------
+0707 오후
+* git에서 파일 지울때는 git status 확인 후  git restore . 입력 이후 git clean fd 입력하면 파일들 사라짐
+
+![image](https://user-images.githubusercontent.com/107795925/177735548-498f054c-893e-414e-8e67-f2d9a4df9742.png)
+
+- javascript에서는 인라인 요소를 수정할 때css처럼 background-color와 같은 명령프롬프트를 사용불가(javascript에서는 -를 산술연산자로 인식하기 때문)<br>
+대신 javascript에서는 backgroundColor와 같이 대문자를 포함해서 적용시킬 수 있다.
+
+- css영역의 style에서 대상의 움직임에 관한 설정을 하고 싶을 때는 transition 사용한다. 이는 움직임에 대한 시간적인 변화를 줄때 사용<br>
+linear은 일정한 비율을 의미함.<br>
+ease-out은 도착을 부드럽게 함 / ease-in 출발을 부드럽게 함 / 둘다는 ease-in-out
+
+- 코드 작성법에 따른 분류<br?
+moveRightBtn을 move_right_btn처럼 작성하는 것을 snake case(_사용)<br>
+moveRightBtn은 camel case(대문자사용)<br>
+move-right-btn은 kebob case 라고 함(-사용)
+
+* 간편 명령어
+```html
+div{div$}*num
+```
+아래 그림 참조
+
+![image](https://user-images.githubusercontent.com/107795925/177736217-866fe06f-de70-405f-9146-3be6f79767fe.png)
+
