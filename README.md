@@ -33,7 +33,7 @@ Today I Learned
 - headline은 최대 h6까지 생성 가능(단, 숫자가 늘어날때마다 폰트 크기는 점점 작아짐)
 
 
-* 주석 : html - <!-- --> | css&javascript -  , /* */
+* 주석 : html - <!-- --> | css&javascript -  // , /* */
 - <!DOCTYPE html> => 이 문서는 html5 형식의 문서라고 웹브라우저에게 알리는 선언부
 - html 문서는 head 요소와 body 요소로 구성된다.
 - body 요소에는 주로 화면에 나타낼 요소를 작성한다.
