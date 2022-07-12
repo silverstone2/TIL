@@ -568,3 +568,11 @@ div{div$}*num
 
 *20220711
 
+![문자열 작성시 insertAdjacentHTML](https://user-images.githubusercontent.com/107795925/178380340-17ddca40-bc5f-423d-9fbe-418055971c55.PNG)
+
+
+![마진패딩](https://user-images.githubusercontent.com/107795925/178380354-af7a686f-24c4-4cba-8d25-c1b7d473f5d3.PNG)
+
+
+![3개 작성시(순서는 시계방향임)](https://user-images.githubusercontent.com/107795925/178380359-cd9160a4-27ce-4c29-8650-6c3cf0e55103.PNG)
+
