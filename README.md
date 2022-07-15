@@ -576,3 +576,16 @@ div{div$}*num
 
 ![3개 작성시(순서는 시계방향임)](https://user-images.githubusercontent.com/107795925/178380359-cd9160a4-27ce-4c29-8650-6c3cf0e55103.PNG)
 
+
+--------------------------------------------------
+
+*20220712
+
+* Step18_form2.html 파일을 콘솔로 검사를 했을 때
+* 아이디가 email인것을 document.querySelector로 변수를 선언해준다음
+* 변수.classList를 작성하면 add와 remove가 생김
+* 그 상태에서 email.classList.add("is-valid")를 치면 웹페이지에 적용됨.
+* 즉, javascript로 원하는 시점에 적용이 가능하다!
+* 사진 추가 예정
+
+--------------------------------------------------
