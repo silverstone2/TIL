@@ -767,3 +767,87 @@ OUTER JOIN : (+)를 WHERE절 왼쪽 조건뒤에 붙여야 함 -> 보이지 않�
 
             
             ------------------------------------------------------------------------
+            
+            * 20220715
+            rownum은 행번호를 붙이고 싶을 때 사용하는 명령어
+
+
+서브쿼리는 메인쿼리보다 먼저 실행됨.
+단일행 쿼리는 = 와 같은 동등연산자로 비교 가능
+다중행 쿼리는 단일행과는 다르게 = 와 같은 동등연산자로 비교불가
+그래서 in all any exist를 사용한다.
+group by는 서브쿼리가 리턴하는 행의 개수가 여러개일때 사용
+
+* 특정 로우의 위아래값을 같은 로우에 표시하고 싶다면?
+lead와 lag는 값이 없을 때 0가 default값이 된다.
+
+문자열로 할때는 문자열의 기본값음 'no'또는 '없음'이라고 하면 됨.
+
+
+
+
+----------오후 시작-----------
+localhost:8080/apex 오라클 gui
+
+관계형데이터베이스
+
+
+dml = commit하기 전까지는 임시반영
+* 참고사항 :  primary key = not null + unique
+시퀀스 생성
+
+oracle에서 command창은 직접 commit이나 rollback을 해줘야 함,. 
+
+참조하는 방법 -> db 참조방법 사진 참고 (regerence 사용해서 참조)
+
+
+DESC USER_TABLES는 오라클에서 제공해주는 테이블관련 명령어임.
+USER_ 뒤에 단어 붙이면 유저에 대한 정보가 나타남
+DESC USER_CONSTRAINTS는 제약조건에 대한 경고를 조회할 수 있는 커리
+
+
+
+TABLE_NAME                                                   CONSTRAINT_NAME
+          CO
+------------------------------------------------------------ ------------------------------------------------------------ --
+EMP2                                                         SYS_C004008
+          R  REFERENCE
+MEMBER                                                       SYS_C004004
+          C  NOT NULL
+EMP                                                          FK_DEPTNO
+          R 
+DEPT                                                         PK_DEPT
+          P  PRIMARY KEY
+EMP                                                          PK_EMP
+          P
+MESSAGE                                                      SYS_C004003
+          P
+BIN$6bzPFNdCS4CrUAcWrG0VTA==$0                               BIN$RYNPWeFqQeC3xFOBke2w5w==$0
+          P
+BIN$ltKOZLEMTKGKfQk7YZLwtg==$0                               BIN$fzww+3yYRC2i17Ln9WYk9A==$0
+          P
+MEMBER                                                       SYS_C004005
+          P
+DEPT2                                                        SYS_C004006
+          P
+EMP2                                                         SYS_C004007
+          P
+
+11 개의 행이 선택되었습니다.
+fk = 외래기 foreign key
+
+
+
+
+
+제약조건의 이름을 이쁘게 지으면 관리하기 편해짐.
+제약 조건의 이름을 부여하지 않으면 임의로 시스템이 부여함.
+
+
+객체를 삭제할 땐 DROP 명령어 사용(테이블 삭제는 rollback이 안됨 / 걍 새로만들기)
+
+
+column level 제약조건 : 칼럼을 정의할 때 바로 정의하는 것
+table level 제약조건 : 칼럼 정의할 때 정의 안하는 거
+-> 뒤에 언급해줄때 어디에 적용할건지 ()안에다가 명시를 해줘야함.
+외래키의 제약조건의 경우는 foreign KEY(참조할 칼럼)이라고 명시해줘야한다.
