@@ -938,5 +938,13 @@ true가 리턴된 index의 item으로만 구성된 배열이다
 - setTimeout 예시 사진 
 ![image](https://user-images.githubusercontent.com/107795925/179661827-49466976-2c30-4865-a28b-540afd1e91a0.png)
 
+#오후
+- 딜레이 비동기 동작(promise)
+![image](https://user-images.githubusercontent.com/107795925/179707151-3c7a3a3b-eacb-4203-b814-140399a25c69.png)
+
+![image](https://user-images.githubusercontent.com/107795925/179707247-2b2e675f-ceb2-46be-8215-e35648571f73.png)
+
+- fetch 함수는 실행시킬때는 라이브서버로 작동시켜야함
+- 서버에  friends.json 문서를 요청해서 받아온다.(json 파일은 따로 생성해야함)
 
 
