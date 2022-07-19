@@ -929,5 +929,14 @@ true가 리턴된 index의 item으로만 구성된 배열이다
 - backtick은 변수안에 들어있는 숫자나 문자열을 연결할 때도 편하다.
 - backtick은 게인기호도 알아서 입력이 됨
 
+- 다양한 포문(for)
+![image](https://user-images.githubusercontent.com/107795925/179661694-191aa8ce-4942-468b-9962-328bfaad6e27.png)
+            
+- setTimeout() 이라는 builtin 함수가 있다.
+- setTimeout(콜백함수, 지연시간(ms))
+- 어떤 작업을 일정시간 지연 이후에 하고 싶을 때 사용한다.
+- setTimeout 예시 사진 
+![image](https://user-images.githubusercontent.com/107795925/179661827-49466976-2c30-4865-a28b-540afd1e91a0.png)
+
 
 
