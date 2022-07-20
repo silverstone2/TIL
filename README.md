@@ -947,4 +947,18 @@ true가 리턴된 index의 item으로만 구성된 배열이다
 - fetch 함수는 실행시킬때는 라이브서버로 작동시켜야함
 - 서버에  friends.json 문서를 요청해서 받아온다.(json 파일은 따로 생성해야함)
 
+-------------------------------------------------------------------------
+###20220720
+- git에서 restore기능은 untracked file을 되돌릴수는 없다 그 외에는 가능
+- untracked file은 clean -fd로 해야 없어짐
 
+- git 작업 중 작업을 임시종료시키고 다른 branch에서 작업한게 따라오지 않으려면 git stash save라고 쳐서 임시저장을 해야한다.
+- 단 untracked file은 임시저장이 따로 안된다,
+- 그래서 git stash list라고 저장된 목록을 살펴본다
+- git stash pop을 치면 index.html에 변경사항이 다시 살아남.(stash한 list를 불러서 적용시키는 원리)
+- pop은 지우면서 긁어와서 적용을 시키는 것이다
+
+- git stash -u 라고 명령어를 치면 untracked file을 포함해서 임시저장한다는 뜻임.
+
+
+- 작업을 종료할 때는 working tree가 clean한 상태여야 한다.
