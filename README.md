@@ -949,6 +949,7 @@ true가 리턴된 index의 item으로만 구성된 배열이다
 
 -------------------------------------------------------------------------
 ###20220720
+#GIT
 - git에서 restore기능은 untracked file을 되돌릴수는 없다 그 외에는 가능
 - untracked file은 clean -fd로 해야 없어짐
 
@@ -962,3 +963,13 @@ true가 리턴된 index의 item으로만 구성된 배열이다
 
 
 - 작업을 종료할 때는 working tree가 clean한 상태여야 한다.
+
+# JAVASCRIPT ECMA6(ES6)
+- str1은 json형식에 따른 것
+- JSON.parse(변수명)으로 json형식으로 표시가능
+- json 자료 참고링크 : https://www.oracle.com/kr/database/what-is-json/
+- json은 javascript와 유사하지만 방의 이름을 ""로 감싸야함
+- xml과 json 등 여러가지 언어를 사용할때 형식을 갖추면 편함
+- 시간 날때 javascript closure 개념 확인해봅기~!~!~!~!~!~!~!~!!
+![image](https://user-images.githubusercontent.com/107795925/179937743-2fb8e785-1357-405f-8224-e1aeff542deb.png)
+
