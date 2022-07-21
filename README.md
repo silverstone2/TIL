@@ -973,3 +973,67 @@ true가 리턴된 index의 item으로만 구성된 배열이다
 - 시간 날때 javascript closure 개념 확인해봅기~!~!~!~!~!~!~!~!!
 ![image](https://user-images.githubusercontent.com/107795925/179937743-2fb8e785-1357-405f-8224-e1aeff542deb.png)
 
+
+--------------------------------------------------------------
+#20220721
+
+git reflog 는 git에서 행한 작업들에 대한 로그를 모두 보여줌(reflog = reference log)
+
+일반적으로 취소를 할때는 git reset 명령어를 사용하는게 맞지만 사용하면 안될 경우도 있다
+그 경우는 commit한 것을 이미 github에 올린상태라면 reset하는걸 고려해보아야함(올린걸 clone해서 다른 작업하고 있으면 대참사발생)
+이럴 경우에는 취소하는 이력을 따로 commit해주면 된다.
+
+한 줄에 로그 표시하고 싶으면 git log --oneline
+
+reset은 hard, soft, mixed 3가지의 옵션이 있다!
+일부 수정만 할거면 mixed
+untracked file까지 강하게 되돌릴거면 hard
+좀 약하게 할거면 soft
+
+------------------------------------------------
+<java>
+
+- 오른쪽 돋보기 옆 아이콘 누르면 open Perspective 눌러서 환경 변경하면 됨
+
+- 편집기 환경설정하는 곳은 window - preferences 클릭
+- 처음 실행하면 preferences에서 encoding을 잡아줘야함
+- encoding을 workspace-other-utf8로 변경하기
+- workspace에서 .metadata는 java의 설정값을 저장해준다
+- 이클립스의 폴더는 이클립스의 기능을 통해서 조작해야함(복붙 금지 -> 동작 안함)
+
+- 자바에서의 패키지는 폴더를 말함.
+- xxx.java => 클래스라고 말함
+
+- 디버깅을 할때는 브레이킹 포인트가 설정되는게 선행되어야 함 브레이킹포인트는 숫자옆에 칸을 더블클릭하면됨
+- 이후 위족에 벌레모양에 debug as 누르면 프로젝트 눌러서 실행하면되고 다음 걸로 넘어가고 싶으면 f6누르면됨
+- 오른쪽 value에서 String값에만 id가 부여되어있음
+
+- 다시 자바환경으로 돌아오려고 하면 오른쪽에서 환경 변경만 하면 됨.
+
+- window-reset preferences하면 최초의 환경으로 돌아옴
+
+- jre - java runtime environment를 의미
+
+
+- <기본 데이터 타입>
+- 숫자 - byte / short / int /long / float / double
+
+- 논리 - boolean
+
+- 문자 - char
+
+- 공통특징 : 소문자로 시작합니다
+
+
+
+- <참조 데이터 타입>
+- 기본데이터 타입과 상반되는 관계
+
+* 디버깅에서 나타나는 id는 heap영역에서의 참조값이다(사물함 영역의 key값)
+- 객체 : 값의 저장소 + 기능(어떠한 동작을 의미) (사물함(heap영역)영역이 만들어지고 그 key값이 참조됨)
+
+- 디버깅 멈추고 싶을 때는 클릭하고 위에 빨간네모 (stop button) 클릭하면 됨.
+- 디버깅이 멈춘 상태는 terminated라고 뜸
+
+- 자바에서의 . 은 저장소 혹은 기능을 찾아감 -> 기본데이터값은 아무것도 나오지 않음(참조값이 아니기 때문에)
+- 참조데이터만 .을 찍으면 부가 기능이 나온다(참조데이터만의 특징)
