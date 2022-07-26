@@ -1133,3 +1133,22 @@ static 영역에 있는 클래스의 static 필드나 static 메소드를 활용
 2. 콘솔창에 문자열을 출력해주는 객체 -> sysout
 
 ----------------------------------------------------------------------
+'''java
+            public int num = 999;
+	
+	public static void main(String[] args) {
+		
+		System.out.println("num : "+this.num);
+	}
+'''
+이건 말이 아예 안됨. static 영역에서의 this. 은 사용을 할 수 없다.
+'''java
+public static int num = 999;
+	
+	public static void main(String[] args) {
+		
+		System.out.println("num : "+MainClass05.num);
+	}
+'''
+
+올바른 코드(MainClass05.은 생략할 수 있지만 일단은 붙이는 습관을 들이자)
