@@ -1152,3 +1152,42 @@ public static int num = 999;
 '''
 
 올바른 코드(MainClass05.은 생략할 수 있지만 일단은 붙이는 습관을 들이자)
+
+----------------------------------------------------------------------
+#20220728 오전
+!vsc에서 git 사용방법 정리할 것!
+eclipse에서 git 사용하는 방법
+
+프로젝트까지 생성하고 오른쪽마우스 우클릭후 team -> share project
+init 폴더를 새로 만들면서 거기에 init을 하는게 맞다
+create - browse - 바탕화면 MyGitRepo 선택 - 하고 폴더명 하나 적기 - finish
+그러면 희한한 표시들이 막 생김(자동으로 옮겨감)
+그다음 생성한 폴더에서 git bash를 연다
+
+그리고 마우스 우클릭 team - commit 누르면 commit에 관련 정보 제공창 뜸
+
+unstaged changes에 있는 목록들을 밑의 staged changes로 끌어내리면 add가 되는거임
+이때 파일에 검은색 바탕 * 표시가 나타남
+
+오른쪽칸에 commit 메세지를 넣고 commit 시키면 됨
+git으로 관리되는 파일들은 노란색 원기둥 표시가 나타남
+
+그리고 수정 후 add 안된 파일들은 이름 옆에 > 표시가 나타남
+
+team - show in history를 보면 git log처럼 commit한 이력에 대해서 볼수 있다
+이 때 각각의 히스토리에 마우스 커서를 두고 우클릭을 하면 별도의 다른 작업도 할 수 있다
+
+* branch 만드는 방법
+team - switch to - new branch - 생성하면 왼쪽 explorer에 브랜치명이 보인다
+
+* merge 방법
+
+team - merge - merge할 브랜치 선택하면 merge가 됨
+
+* file을 통째로 올리게 되면 설정파일까지 같이 올라가기 때문에 다른 환경에서 할때 에러가 발생할 수 있다
+
+Dto 생성하는 방법
+1. 필드 정의
+2. default 생성자 만드리
+3. 커서 가져다 놓고 마우스 우클릭 - source - 밑에서 세번째꺼 클릭하면 양식 다 만들어짐
+4. generate setters and getters - select all 하면 됨
